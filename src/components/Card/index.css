@@ -1,0 +1,48 @@
+.card {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  background: radial-gradient(100% 100% at 50% 100%,rgba(1,249,255,.192) 0,transparent 100%),rgba(18,18,27,.7);
+  margin: 10px;
+  border-radius: 5px;
+  justify-content: space-between;
+  cursor: pointer;
+  border: 1px solid rgb(127 127 127 / 21%);
+  width: 200px;
+  height: 250px;
+}
+
+.card:nth-child(even) {
+  background: radial-gradient(100% 100% at 50% 100%,rgba(246,92,225,.2) 0,transparent 100%),rgba(18,18,27,.7);
+}
+
+.card:nth-child(even) .card-name {
+  background-color: rgb(246,92,225,0.1);
+}
+
+.card:hover {
+  background-color: rgba(33,33,45,.8);
+}
+
+.card-name {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: -webkit-fill-available;
+  font-size: 20px;
+  padding: 5px;
+  background-color: rgb(1,249,255,0.1);
+}
+
+.card-cover {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.card-image {
+  width: 150px;
+  margin: 10px;
+  object-fit: contain;
+}
